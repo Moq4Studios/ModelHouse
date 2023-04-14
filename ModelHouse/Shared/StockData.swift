@@ -11,19 +11,17 @@ import Foundation
 // MARK: - MetaData
 struct StockData: Codable, Identifiable {
     struct MetaData: Codable {
-      let information = "1. Information"
-      //let symbol = "2. Symbol"
-      let symbol = "HHH"
-      let lastRefreshed = "3. Last Refreshed"
-      let interval = "4. Interval"
-      let outputSize = "5. Output Size"
-      let timeZone = "6. Time Zone"
+        var information: String
+        var symbol: String
+        var lastRefreshed: String
+        var interval: String
+        var outputSize: String
+        var timeZone: String
     
                         
       private enum CodingKeys: String, CodingKey {
           case information = "1. Information"
-          //case symbol = "2. Symbol"
-          case symbol = "HHH"
+          case symbol = "2. Symbol"
           case lastRefreshed = "3. Last Refreshed"
           case interval = "4. Interval"
           case outputSize = "5. Output Size"
