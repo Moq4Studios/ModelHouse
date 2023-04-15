@@ -43,7 +43,8 @@ struct ContentView: View {
         .navigationTitle("My Watchlist")
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
-                EditButton()
+                // EditButton()
+                // TODO: Edit Button doesn't exist. You probably want NavigationLink to take you to a detailed view of the stock and then be able to select a model from within that screen.
                 
                 }
             }
